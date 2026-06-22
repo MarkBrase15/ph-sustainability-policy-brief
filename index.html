@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incentives for Sustainability: Market-Based Tools for Philippine LGUs</title>
+    <meta name="description" content="An interactive policy brief for Philippine municipal officials on implementing carbon taxes, plastic fees, and ecological economic instruments at the local level.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Progress Bar for Reading -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Executive Navigation Bar -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">ECO-INCENTIVES</span>
+                    <span class="logo-subtitle">PH LGU Policy Brief</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#summary" class="nav-link active">Executive Summary</a>
+                <a href="#problem" class="nav-link">The Problem</a>
+                <a href="#toolbox" class="nav-link">Policy Toolbox</a>
+                <a href="#simulator" class="nav-link btn-highlight">Policy Simulator</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+                <a href="#ordinance" class="nav-link">Ordinance Builder</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon icon-dark"></i>
+                    <i class="fa-solid fa-sun icon-light"></i>
+                </button>
+                <a href="#ordinance" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-file-contract"></i> Draft Ordinance
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Title Section -->
+    <section class="hero-section">
+        <div class="hero-pattern"></div>
+        <div class="container hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Policy Brief &amp; Fact Sheet for Local Legislators
+            </div>
+            <h1 class="hero-title">Incentives for Sustainability</h1>
+            <p class="hero-subtitle">
+                Harnessing Market-Based Policy Tools &amp; Ecological Economics to Solve Local Environmental Pollution in Philippine Cities
+            </p>
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <i class="fa-solid fa-scale-balanced text-primary"></i>
+                    <span>Legal Framework: <strong>R.A. 7160 (Local Government Code)</strong></span>
+                </div>
+                <div class="meta-item">
+                    <i class="fa-solid fa-bullseye text-primary"></i>
+                    <span>Target Audience: <strong>Local City Council &amp; Municipal Officials</strong></span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#simulator" class="btn btn-accent btn-lg">
+                    <i class="fa-solid fa-sliders"></i> Open LGU Impact Simulator
+                </a>
+                <a href="#summary" class="btn btn-secondary btn-lg">
+                    <i class="fa-solid fa-book-open"></i> Read Policy Brief
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-content">
+        <div class="container content-grid">
+            
+            <!-- Sidebar Navigation for Desktop -->
+            <aside class="sidebar-nav">
+                <div class="sticky-card">
+                    <div class="card-header-small">BRIEF CONTENTS</div>
+                    <ul class="vertical-nav">
+                        <li><a href="#summary"><i class="fa-solid fa-receipt"></i> Executive Summary</a></li>
+                        <li><a href="#problem"><i class="fa-solid fa-triangle-exclamation"></i> The Problem: Market Failures</a></li>
+                        <li><a href="#toolbox"><i class="fa-solid fa-toolbox"></i> Market-Based Toolbox</a></li>
+                        <li><a href="#simulator"><i class="fa-solid fa-chart-line"></i> Interactive LGU Simulator</a></li>
+                        <li><a href="#roadmap"><i class="fa-solid fa-route"></i> Implementation Roadmap</a></li>
+                        <li><a href="#ordinance"><i class="fa-solid fa-gavel"></i> Model Ordinance Builder</a></li>
+                        <li><a href="#citations"><i class="fa-solid fa-quote-right"></i> References &amp; Citations</a></li>
+                    </ul>
+                    <div class="sidebar-footer">
+                        <p class="text-muted text-xs">Prepared in compliance with environmental economics principles and the Local Government Code of 1991.</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Document Flow -->
+            <div class="document-flow">
+                
+                <!-- Section 1: Executive Summary -->
+                <section id="summary" class="document-section card">
+                    <h2 class="section-title"><i class="fa-solid fa-receipt"></i> Executive Summary</h2>
+                    <div class="executive-card">
+                        <div class="executive-quote">
+                            "Traditional regulatory bans often lead to black markets and high enforcement costs. Economic incentives turn environmental cleanup into a revenue-generating opportunity for municipal development."
+                        </div>
+                        <div class="executive-author">— Principles of Ecological Economics</div>
+                    </div>
+                    <div class="section-body">
+                        <p>
+                            Philippine cities and municipalities face accelerating environmental crises: clogged waterways causing severe urban flooding, escalating garbage hauling fees, and deteriorating urban air quality. Traditional <strong>"Command-and-Control" (CAC)</strong> regulations—such as outright bans on plastics or vehicle restrictions—are difficult to enforce, often place severe economic burdens on micro-enterprises, and drain limited LGU resources.
+                        </p>
+                        <p>
+                            This Policy Brief introduces <strong>Market-Based Instruments (MBIs)</strong> as a fiscally responsible and highly effective alternative. Based on the principles of <strong>Ecological Economics</strong>, which models the economy as a subsystem of the Earth’s finite ecosystem, these tools "internalize" environmental damages directly into market prices.
+                        </p>
+                        
+                        <div class="three-pillars-grid">
+                            <div class="pillar-card">
+                                <div class="pillar-icon"><i class="fa-solid fa-coins"></i></div>
+                                <h3>Generate Green Revenue</h3>
+                                <p>Fees and levies go directly to a local trust fund earmarked for municipal environmental projects.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <h3>Reduce Enforcement Strain</h3>
+                                <p>Economic incentives leverage self-interest, causing businesses and residents to naturally reduce waste.</p>
+                            </div>
+                            <div class="pillar-card">
+                                <div class="pillar-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                                <h3>Promote Clean Jobs</h3>
+                                <p>Revenue from local fees can directly fund green livelihoods, upland forest wardens, and recycling facilities.</p>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <i class="fa-solid fa-circle-info alert-icon"></i>
+                            <div>
+                                <strong>LGU Legal Authority:</strong> Section 186 of the Local Government Code of 1991 (R.A. 7160) explicitly empowers LGUs to create their own sources of revenue, including environmental user fees, carbon offsets, and specific local levies, provided they are not unjust, excessive, or contrary to national policy.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 2: The Problem -->
+                <section id="problem" class="document-section card">
+                    <h2 class="section-title"><i class="fa-solid fa-triangle-exclamation"></i> The Problem: Market Failures in PH Cities</h2>
+                    <div class="section-body">
+                        <p>
+                            In standard neoclassical economics, environmental pollution is treated as a <strong>negative externality</strong>—a cost suffered by a third party (the general public, downstream ecosystems, or future generations) as a consequence of an economic transaction. Because polluters do not pay this cost, they produce too much pollution.
+                        </p>
+                        
+                        <!-- Visual representation of Negative Externality -->
+                        <div class="diagram-box">
+                            <h4>The Economics of Pollution: Command-and-Control vs. Market-Based</h4>
+                            <div class="diagram-flex">
+                                <div class="diagram-pane pane-cac">
+                                    <div class="pane-header"><i class="fa-solid fa-ban"></i> Command &amp; Control (Bans)</div>
+                                    <div class="pane-illustration">
+                                        <div class="illustration-row">
+                                            <div class="ill-node bad">Sachet Waste</div>
+                                            <div class="ill-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                                            <div class="ill-node act">Outright Ban</div>
+                                        </div>
+                                        <div class="illustration-outcome">
+                                            <p class="text-danger"><i class="fa-solid fa-circle-xmark"></i> High administrative costs, black market sales, hits low-income sari-sari stores.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="diagram-pane pane-mbi">
+                                    <div class="pane-header"><i class="fa-solid fa-piggy-bank"></i> Market-Based (Economic Fees)</div>
+                                    <div class="pane-illustration">
+                                        <div class="illustration-row">
+                                            <div class="ill-node bad">Sachet Waste</div>
+                                            <div class="ill-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                                            <div class="ill-node act-green">Eco-Fee Levied</div>
+                                        </div>
+                                        <div class="illustration-outcome">
+                                            <p class="text-success"><i class="fa-solid fa-circle-check"></i> Price signal reduces demand; fee pays for municipal recycling; stores adapt transitionally.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>
+                            Under ecological economics, we analyze two pressing environmental failures currently dragging down local municipal budgets in the Philippines:
+                        </p>
+
+                        <div class="issue-accordion">
+                            <div class="accordion-item open">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span><i class="fa-solid fa-trash-can text-danger"></i> Solid Waste and the "Tingi" Economy</span>
+                                    <i class="fa-solid fa-chevron-down chevron"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>
+                                        The Philippines consumes approximately **163 million single-use plastic sachets** daily. Due to the "tingi" culture, low-income households buy goods in micro-portions. The cost of packaging and disposal is not included in the sachet price. LGUs bear the cost of cleanup, landfill tipping fees (ranging from **PHP 600 to PHP 1,200 per ton**), and drainage declogging. This represents a massive subsidy from public tax funds to plastic manufacturers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header" onclick="toggleAccordion(this)">
+                                    <span><i class="fa-solid fa-cloud-sun text-danger"></i> Urban Air Pollution and Healthcare Costs</span>
+                                    <i class="fa-solid fa-chevron-down chevron"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>
+                                        Particulate Matter (PM2.5) levels in Metro Manila, Cebu, and urban centers frequently exceed WHO safety standards. The health costs of respiratory illnesses (asthma, COPD, cardiovascular diseases) are borne by the public healthcare system (PhilHealth and municipal health offices) and individual families, while vehicle operators pay nothing for the air degradation they cause.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 3: The Toolbox -->
+                <section id="toolbox" class="document-section card">
+                    <h2 class="section-title"><i class="fa-solid fa-toolbox"></i> The Market-Based Policy Toolbox</h2>
+                    <div class="section-body">
+                        <p>
+                            Rather than dictating behavior, market-based tools use price signals to align private incentives with social and environmental goals. We recommend two major tools easily implementable by LGUs:
+                        </p>
+
+                        <!-- Tool 1 -->
+                        <div class="tool-detail-card">
+                            <div class="tool-header">
+                                <div class="tool-title-wrapper">
+                                    <span class="tool-number">01</span>
+                                    <h3>Pigouvian Taxes (Local Eco-Fees)</h3>
+                                </div>
+                                <span class="badge badge-success">Highly Feasible</span>
+                            </div>
+                            <p>
+                                A Pigouvian tax is a tax levied on any market activity that generates negative externalities. The tax is set equal to the marginal external cost of the damage, correcting the market price.
+                            </p>
+                            <div class="tool-ph-context">
+                                <strong>Philippine Application:</strong> LGUs can levy a **"Point-of-Sale Eco-Fee"** (e.g., PHP 2.00 to PHP 5.00) on single-use plastic carry-out bags (similar to ordinances in Quezon City and Pasig City). Retailers collect the fee, which is deposited directly into the city's Green Fund, rather than absorbed as corporate profit.
+                            </div>
+                            <div class="tool-math-box">
+                                <span class="math-label">Pigouvian Formula:</span>
+                                <span class="math-expr">Price_{Social} = Price_{Private} + Tax_{Pigouvian}</span>
+                            </div>
+                        </div>
+
+                        <!-- Tool 2 -->
+                        <div class="tool-detail-card">
+                            <div class="tool-header">
+                                <div class="tool-title-wrapper">
+                                    <span class="tool-number">02</span>
+                                    <h3>Local Carbon Offsets &amp; Cap-and-Trade</h3>
+                                </div>
+                                <span class="badge badge-warning">Medium Complexity</span>
+                            </div>
+                            <p>
+                                A cap-and-trade system sets a maximum level (cap) on pollution and issues tradable allowances. Polluters who exceed their allowances must buy credits from those who emit less.
+                            </p>
+                            <div class="tool-ph-context">
+                                <strong>Philippine Application:</strong> Large commercial buildings (malls, high-rises) and industrial plants must match a percentage of their carbon footprint by purchasing local **"Municipal Blue Carbon/Green Carbon Credits."** The LGU sells these credits to fund local reforestation (e.g., restoring watershed forests in upland areas or planting mangroves in coastal zones). This creates a direct market connection between urban emitters and rural/coastal conservationists.
+                            </div>
+                            <div class="tool-math-box">
+                                <span class="math-label">Offset Formula:</span>
+                                <span class="math-expr">Carbon_{Emitted} - Offset_{Purchased} \le Cap_{Allowed}</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 4: Interactive Simulator -->
+                <section id="simulator" class="document-section card highlight-section">
+                    <h2 class="section-title text-white"><i class="fa-solid fa-chart-line"></i> Interactive LGU Policy Simulator</h2>
+                    <div class="section-body">
+                        <p class="text-light-green text-sm">
+                            Adjust the variables below to simulate the environmental and fiscal impacts of implementing these market-based instruments in a Philippine city.
+                        </p>
+
+                        <div class="simulator-layout">
+                            <!-- Left: Controls -->
+                            <div class="sim-controls">
+                                <div class="control-group">
+                                    <label for="citySize" class="control-label">
+                                        <span>City Scale / Population</span>
+                                        <span class="tooltip" data-tooltip="Based on average PH LGU metrics."><i class="fa-solid fa-circle-question"></i></span>
+                                    </label>
+                                    <select id="citySize" class="form-select">
+                                        <option value="large">Highly Urbanized City (500k pop)</option>
+                                        <option value="medium" selected>Component City (150k pop)</option>
+                                        <option value="small">Small Municipality (50k pop)</option>
+                                    </select>
+                                </div>
+
+                                <div class="control-group">
+                                    <div class="control-header-flex">
+                                        <label for="plasticFee" class="control-label">Plastic Bag Fee (PHP / bag)</label>
+                                        <span id="plasticFeeVal" class="val-display">PHP 3.00</span>
+                                    </div>
+                                    <input type="range" id="plasticFee" min="0" max="10" step="0.5" value="3" class="form-slider">
+                                    <div class="slider-labels">
+                                        <span>₱0 (No Fee)</span>
+                                        <span>₱5</span>
+                                        <span>₱10</span>
+                                    </div>
+                                </div>
+
+                                <div class="control-group">
+                                    <div class="control-header-flex">
+                                        <label for="carbonTax" class="control-label">Local Carbon Offset Tariff (PHP / Ton CO2)</label>
+                                        <span id="carbonTaxVal" class="val-display">PHP 500</span>
+                                    </div>
+                                    <input type="range" id="carbonTax" min="0" max="1500" step="50" value="500" class="form-slider">
+                                    <div class="slider-labels">
+                                        <span>₱0</span>
+                                        <span>₱750</span>
+                                        <span>₱1,500</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Impact Outputs -->
+                            <div class="sim-outputs">
+                                <h4 class="outputs-title">Projected Annual City Impact</h4>
+                                
+                                <div class="output-cards-grid">
+                                    <!-- Card 1: Revenue -->
+                                    <div class="output-card output-primary">
+                                        <div class="output-label">Annual Green Revenue</div>
+                                        <div class="output-value" id="outRevenue">₱4,500,000</div>
+                                        <div class="output-meta">Earmarked LGU trust fund</div>
+                                    </div>
+                                    
+                                    <!-- Card 2: Waste Reduction -->
+                                    <div class="output-card output-accent">
+                                        <div class="output-label">Plastic Bag Reduction</div>
+                                        <div class="output-value" id="outPlasticRed">75%</div>
+                                        <div class="output-meta" id="outPlasticBagsSaved">1.2M bags saved/yr</div>
+                                    </div>
+
+                                    <!-- Card 3: Landfill Savings -->
+                                    <div class="output-card">
+                                        <div class="output-label">Landfill Fee Savings</div>
+                                        <div class="output-value" id="outTippingSaved">₱340,000</div>
+                                        <div class="output-meta">Lower hauling cost</div>
+                                    </div>
+
+                                    <!-- Card 4: Ecosystem Restoration -->
+                                    <div class="output-card">
+                                        <div class="output-label">Mangroves Planted / Funded</div>
+                                        <div class="output-value" id="outMangroves">15.4 Hectares</div>
+                                        <div class="output-meta" id="outJobs">Creates ~32 local jobs</div>
+                                    </div>
+                                </div>
+
+                                <div class="sim-chart-container">
+                                    <div class="chart-header">
+                                        <span>Policy Cleanliness vs Cost Optimization Index</span>
+                                        <span class="text-xs text-muted">Goal: Higher is more sustainable</span>
+                                    </div>
+                                    <div class="index-bar-wrapper">
+                                        <div class="index-bar-fill" id="indexBar" style="width: 65%;"></div>
+                                        <div class="index-marker" id="indexVal">65/100</div>
+                                    </div>
+                                    <div class="index-verdict" id="indexVerdict">
+                                        Moderate Sustainability: Positive impact, but fee structures can be optimized for higher carbon offsetting.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 5: Implementation Roadmap -->
+                <section id="roadmap" class="document-section card">
+                    <h2 class="section-title"><i class="fa-solid fa-route"></i> Legal &amp; Policy Implementation Roadmap</h2>
+                    <div class="section-body">
+                        <p>
+                            Transitioning to market-based policy tools requires a systematic legal approach to ensure ordinances are not challenged in court. Below is the step-by-step roadmap for Philippine LGUs under **R.A. 7160**.
+                        </p>
+
+                        <div class="roadmap-timeline">
+                            <div class="timeline-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Technical Study &amp; Baseline Assessment</h4>
+                                    <p>Conduct a local waste audit (WACS) or carbon inventory. Identify the marginal cost of pollution to set the Pigouvian fee correctly (e.g., matching local landfill cost per bag).</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Public Consultation &amp; Stakeholder Dialogues</h4>
+                                    <p>Present the proposed fees to business councils, supermarket chains, chamber of commerce, and civil society groups. Frame the fee not as a tax, but as an **environmental service user charge**.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Drafting the LGU Ordinance</h4>
+                                    <p>Submit the ordinance to the Sanggunian (Council) Environment Committee. Define explicit earmarking rules so that all collected revenue enters a **Special Trust Account for the Environment**.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Enforcement &amp; Monitoring</h4>
+                                    <p>Deploy the Business Permits and Licensing Office (BPLO) to inspect retail point-of-sales. Setup a public dashboard to show how LGU Green Funds are being spent (e.g., number of trees planted, sorting centers built) to maintain public trust.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section 6: Ordinance Draft Builder -->
+                <section id="ordinance" class="document-section card">
+                    <h2 class="section-title"><i class="fa-solid fa-gavel"></i> Model Ordinance Builder</h2>
+                    <div class="section-body">
+                        <p>
+                            Generate a customized draft ordinance based on the variables selected in the Policy Simulator. Local council members can copy, modify, and present this to the committee.
+                        </p>
+
+                        <!-- Input fields for Ordinance customization -->
+                        <div class="ordinance-customizer">
+                            <div class="input-row">
+                                <div class="form-group flex-1">
+                                    <label for="lguType">LGU Type</label>
+                                    <select id="lguType" class="form-select select-sm">
+                                        <option value="City" selected>City</option>
+                                        <option value="Municipality">Municipality</option>
+                                    </select>
+                                </div>
+                                <div class="form-group flex-2">
+                                    <label for="lguName">LGU Name</label>
+                                    <input type="text" id="lguName" class="form-control control-sm" value="Liloan" placeholder="e.g., Quezon, Liloan, Cebu">
+                                </div>
+                                <div class="form-group flex-2">
+                                    <label for="provinceName">Province Name</label>
+                                    <input type="text" id="provinceName" class="form-control control-sm" value="Cebu" placeholder="e.g., Metro Manila, Cebu">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ordinance-paper">
+                            <div class="paper-header">
+                                <p class="office-name">REPUBLIC OF THE PHILIPPINES</p>
+                                <p class="office-name">SANGGUNIANG <span id="ordSangguniangType">PANLUNGSOD</span></p>
+                                <p class="office-name">Office of the Secretary to the Sanggunian</p>
+                                <p class="office-lgu"><span id="ordLguHeader">City of Liloan, Province of Cebu</span></p>
+                            </div>
+
+                            <div class="paper-title">
+                                ORDINANCE NO. ____, SERIES OF 2026
+                            </div>
+
+                            <div class="paper-subject">
+                                AN ORDINANCE CREATING AN ENVIRONMENTAL RECOVERY TRUST FUND, LEVYING AN ECO-FEE ON SINGLE-USE PLASTICS, AND ESTABLISHING A LOCAL CARBON COMPENSATION SYSTEM IN THE <span class="highlight-var" id="ordLguTypeUpper">CITY</span> OF <span class="highlight-var" id="ordLguNameUpper">LILOAN</span>.
+                            </div>
+
+                            <div class="paper-body">
+                                <p>
+                                    <strong>WHEREAS,</strong> Section 16 of Republic Act No. 7160, otherwise known as the Local Government Code of 1991, mandates all Local Government Units to ensure and promote the health and safety of their inhabitants, and enhance the right of the people to a balanced and healthful ecology;
+                                </p>
+                                <p>
+                                    <strong>WHEREAS,</strong> Section 186 of R.A. No. 7160 grants LGUs the authority to levy taxes, fees, or charges on any base or subject not otherwise specifically enumerated or taxed under national laws;
+                                </p>
+                                <p>
+                                    <strong>NOW, THEREFORE, BE IT ORDAINED</strong> by the Sangguniang <span id="ordSangguniangBodyType">Panlungsod</span> of <span class="highlight-var" id="ordLguNameBody">Liloan</span>, in session assembled, that:
+                                </p>
+                                
+                                <p class="section-heading">SECTION 1. TITLE.</p>
+                                <p>This Ordinance shall be known as the <em>"LGU Sustainability Incentives Act of 2026."</em></p>
+
+                                <p class="section-heading">SECTION 2. REGULATORY POINT-OF-SALE PLASTIC BAG FEE.</p>
+                                <p>
+                                    There is hereby levied an Environmental Eco-Fee of <strong class="highlight-var" id="ordPlasticFeeText">PHP 3.00</strong> on every single-use plastic bag provided to consumers at any point of sale in commercial establishments, supermarkets, department stores, and fast-food chains within the municipal boundaries.
+                                </p>
+
+                                <p class="section-heading">SECTION 3. LOCAL CARBON COMPENSATORY OFFSET TARIFF.</p>
+                                <p>
+                                    All category-A commercial developments, warehouses, and industrial structures operating within the LGU shall compensate for their estimated scope-2 carbon emissions by paying a local carbon offset tariff of <strong class="highlight-var" id="ordCarbonTaxText">PHP 500.00</strong> per metric ton of CO₂ equivalent, unless said businesses purchase equivalent municipal forestry/mangrove carbon credits.
+                                </p>
+
+                                <p class="section-heading">SECTION 4. CREATION OF SPECIAL TRUST ACCOUNT.</p>
+                                <p>
+                                    All revenues collected under Sections 2 and 3 of this Ordinance shall be deposited directly into a designated <strong>LGU Special Trust Account for the Environment</strong>, which shall be audit-segregated from the general fund and utilized solely for local reforestation, recycling facility operations, and clean energy projects.
+                                </p>
+
+                                <p class="section-heading">SECTION 5. SEPARABILITY CLAUSE.</p>
+                                <p>
+                                    If any provision of this Ordinance is declared unconstitutional or invalid, the other provisions not affected thereby shall continue in full force and effect.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="paper-actions">
+                            <button id="copyOrdinanceBtn" class="btn btn-secondary btn-sm">
+                                <i class="fa-solid fa-copy"></i> Copy Ordinance Text
+                            </button>
+                            <button id="downloadOrdinanceBtn" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-download"></i> Download Draft
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Section 7: Citations -->
+                    <section id="citations" class="document-section card">
+                        <h2 class="section-title"><i class="fa-solid fa-quote-right"></i> References &amp; Scientific Sources</h2>
+                        <div class="section-body">
+                            <ul class="citation-list">
+                                <li>
+                                    <div class="citation-author">Organisation for Economic Co-operation and Development. (2021)</div>
+                                    <div class="citation-title">Pricing greenhouse gas emissions: Turning climate targets into climate action.</div>
+                                    <div class="citation-pub">OECD Publishing. <a href="https://doi.org/10.1787/e9778969-en" target="_blank" rel="noopener">https://doi.org/10.1787/e9778969-en</a></div>
+                                </li>
+                                <li>
+                                    <div class="citation-author">Tietenberg, T., &amp; Lewis, L. (2018)</div>
+                                    <div class="citation-title">Environmental and natural resource economics (11th ed.).</div>
+                                    <div class="citation-pub">Routledge.</div>
+                                </li>
+                                <li>
+                                    <div class="citation-author">U.S. Environmental Protection Agency. (2023)</div>
+                                    <div class="citation-title">Cap and trade: Basics.</div>
+                                    <div class="citation-pub"><a href="https://www.epa.gov/emissions-trading-resources" target="_blank" rel="noopener">https://www.epa.gov/emissions-trading-resources</a></div>
+                                </li>
+                                <li>
+                                    <div class="citation-author">Republic Act No. 7160 (1991)</div>
+                                    <div class="citation-title">An Act Providing for a Local Government Code of 1991.</div>
+                                    <div class="citation-pub">Official Gazette of the Republic of the Philippines.</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h4>PEE Midterm/Final Output</h4>
+                <p>Topic Chosen: Economics, Policy, and Living Sustainably (Market-Based Policy Tools).</p>
+            </div>
+            <div class="footer-links">
+                <a href="#summary">Summary</a>
+                <a href="#problem">Externalities</a>
+                <a href="#toolbox">Toolbox</a>
+                <a href="#simulator">Simulator</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 People and the Earth’s Ecosystems (PEE). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
